@@ -29,6 +29,13 @@ section {
     height: 100%;
 }
 
+.overlay {
+    backdrop-filter: blur(7px);
+    position: absolute;
+    inset: 0;
+
+}
+
 .audio-svg {
     cursor: pointer;
     position: absolute;

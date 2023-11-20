@@ -41,7 +41,7 @@
 
 function main() {
     let audio1 = new Audio();
-    audio1.src = "./audio.mp3";
+    audio1.src = "./audio1.mp3";
     const container = document.getElementById("container");
     const canvas = document.getElementById("canvas");
     canvas.width = window.innerWidth;
