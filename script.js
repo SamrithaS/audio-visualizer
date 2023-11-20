@@ -42,7 +42,6 @@
 function main() {
     let audio1 = new Audio();
     audio1.src = "./audio.mp3";
-    const audioContext = new AudioContext();
     const container = document.getElementById("container");
     const canvas = document.getElementById("canvas");
     canvas.width = window.innerWidth;
@@ -61,6 +60,8 @@ function main() {
     // audio1.src = "./audio.mp3"; 
     let flag = 0;
     document.getElementById('audio-svg').addEventListener('click', () => {
+        const audioContext = new AudioContext();
+
         if (!audio1.paused)
             audio1.pause();
         else
@@ -72,7 +73,7 @@ function main() {
             analyser.connect(audioContext.destination);
             console.log(analyser, 'this')
             analyser.fftSize = 512;
-            flag = 1
+            flag = 1;
         }
         const bufferLength = analyser.frequencyBinCount;
         const dataArray = new Uint8Array(bufferLength);
