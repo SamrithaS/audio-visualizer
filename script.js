@@ -76,7 +76,7 @@ main();
 async function query(audio1) {
     let res;
     // if (!audio1.paused) {
-    const fileName = await axios.get("http://localhost:3001/get");
+    const fileName = await axios.get(`${window.location.href}/get`);
     res = fileName.data;
     // }
     return res

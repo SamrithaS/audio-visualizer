@@ -23,8 +23,8 @@ app.use(cors(corsOptions))
 app.get('/get', (req, res) => {
     const fileName = fs.createReadStream('../audio1.mp3');
 
-    const apiUrl = 'https://api.openai.com/v1/audio/transcriptions';
-    const token = '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';
+    // const apiUrl = 'https://api.openai.com/v1/audio/transcriptions';
+    // const token = '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';
     const model = 'whisper-1';
     const responseFormat = 'vtt';
 
