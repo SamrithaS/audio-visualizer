@@ -19,7 +19,11 @@ section {
     margin: auto;
     position: relative;
     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
+
 
 #canvas {
     position: absolute;
@@ -46,11 +50,63 @@ section {
 
 .fig {
     max-width: 218px;
-    margin: auto;
+    margin: 0 auto;
     position: relative;
     z-index: 1000;
 }
 
 img {
     width: 100%;
+}
+
+.details {
+    position: relative;
+    padding-bottom: 25px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 9px;
+}
+
+.details p {
+    color: #000;
+    text-align: center;
+    font-family: Approach;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.9px;
+    letter-spacing: 0.45px;
+    padding-bottom: 4px;
+}
+
+.details span {
+    color: var(--black-alpha-500-alpha, rgba(0, 0, 0, 0.41));
+    text-align: center;
+    font-family: Approach;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 11px;
+    letter-spacing: 1.375px;
+}
+
+.audio-text {
+    position: absolute;
+    color: #000;
+    font-feature-settings: 'dlig' on, 'calt' off, 'liga' off;
+    font-family: Spectral;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 131%;
+    min-width: 350px;
+    max-width: 350px;
+    min-height: 111px;
+    /* max-height: 111px; */
+    /* 36.68px */
+    letter-spacing: -1.12px;
+    min-height: 111px;
+    top: 40px;
+    left: 32px;
+    margin: 0px 32px 0 0px;
 }

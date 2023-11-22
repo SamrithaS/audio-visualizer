@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral">
     <title>Audio Visualizer</title>
 </head>
 
@@ -13,9 +14,14 @@
 
             <audio></audio>
             <div class="overlay"></div>
+            <p class="audio-text" id="audio-text"> </p>
             <figure class="fig">
                 <img src="man.png" />
             </figure>
+            <div class="details">
+                <p>Sam Altman</p>
+                <span>CEO, OPENAI</span>
+            </div>
             <svg width="18" height="17" viewBox="0 0 18 17" fill="none" class="audio-svg" id="audio-svg">
                 <rect x="4" y="2" width="2" height="13" rx="1" fill="#151515" />
                 <rect x="16" y="2" width="2" height="13" rx="1" fill="#151515" />
@@ -25,7 +31,9 @@
             </svg>
         </div>
     </section>
-    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+
+    <script src="script.js" type="module"></script>
 </body>
 
 </html>
