@@ -144,6 +144,10 @@ app.get('/get', (req, res) => {
     //     });
 })
 
+app.get('/health-check', (req, res) => {
+    res.send('Hey this is my API running')
+})
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })
